@@ -19,3 +19,9 @@ I figured that the best way to remedy this issue between the fair value price an
 
 ## Results
 TBD. In this section, I intend to present a comprehensive analysis of the market making strategy deployed by the script, including the frequency of these opportunities, average profit margins, and the success rate of executed trades. This analysis will highlight the effectiveness of the algorithm in real-time market conditions.
+
+## Future Improvements
+I am actively working on several improvements to enhance the performance and versatility of the algorithm:
+1. Trading Multiple Back-Month Contracts Simultaneously - An upcoming upgrade involves enabling the algorithm to trade multiple back-month contracts simultaneously rather than being limited to a single contract at a time.
+2. Dynamic Inventory Management - To refine how the algorithm manages inventory and decides on bid/ask placements, I plan to incorporate a model inspired by Gueant's formulation (as detailed in Gueant's model on arXiv: https://arxiv.org/abs/1105.3115). This model utilizes the market maker's current inventory levels to adjust bid/ask quotes dynamically. The adjustment is based on an approximately linear equation that considers inventory levels.
+3. Enhanced Risk Measures - Including calculations such as CVaR for scenarios where the inventory constraint extends beyond the current simple case of +/- 1 contract limit shall be another improvement. Such an addition will provide a more nuanced understanding of the potential risks associated with holding larger inventory positions.
